@@ -1,199 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Rahul Hans - Academic Website</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #003366; color: #fff; padding: 20px; text-align: center; }
-    header img { border-radius: 50%; width: 150px; height: 150px; margin-top: 10px; }
-    
-    /* Navigation bar */
-    nav {
-      background: #002244;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    section { padding: 20px; max-width: 900px; margin: auto; text-align: justify; }
-    h2 { color: #003366; border-bottom: 2px solid #ccc; padding-bottom: 5px; }
-    ul { list-style: none; padding: 0; }
-    ul li { margin-bottom: 10px; }
-    footer { background: #f4f4f4; text-align: center; padding: 10px; margin-top: 20px; }
-    a { color: #003366; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dr. Rahul Hans — Researcher in ML & Medical Imaging</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <div class="left">
+        <div class="avatar">RH</div>
+        <div>
+          <h1>Dr. Rahul Hans, Ph.D.</h1>
+          <p class="tagline">Associate Professor — Machine Learning, Deep Learning & Medical Image Analysis</p>
+          <p class="contact">📧 <a href="mailto:rahulhans@gmail.com">rahulhans@gmail.com</a> | 📞 +91-9646577516</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#publications">Publications</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <h1>Dr. Rahul Hans</h1>
-  <h3>Associate Professor | Researcher in ML, DL, Metaheuristics, Medical Imaging</h3>
-  <img src="rahul.jpg" alt="Profile Photo">
-</header>
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>I am an Associate Professor in the Department of Computer Science and Engineering at <strong>DAV University, Jalandhar, India</strong>. I hold a Ph.D. from Guru Nanak Dev University (Amritsar) where I focussed on designing <em>Nature-Inspired Metaheuristic Algorithms for Feature Selection</em>. Over the years I have built research programs combining <strong>metaheuristic optimization</strong> with <strong>machine learning and deep learning</strong> for medical image analysis (breast mammography, retinal imaging, chest X-ray and MRI).</p>
+      <p>My work spans algorithm design (nature-inspired metaheuristics), feature selection for high-dimensional medical image data, and practical deep learning pipelines for disease diagnosis. I have collaborated internationally (including with <strong>Prof. Uwe Aickelin, University of Melbourne</strong>) on projects in diabetic retinopathy and diagnostic model optimization.</p>
+      <p><strong>Current role:</strong> Associate Professor, DAV University — teaching, PhD supervision, departmental coordination, Deputy Director IQAC, and leading applied research in medical imaging and computational intelligence.</p>
+    </section>
 
-<!-- Navigation -->
-<nav>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#expertise">Expertise</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#conferences">Conferences</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <section id="expertise" class="card">
+      <h2>Expertise / Research Areas</h2>
+      <ul>
+        <li><strong>Deep Learning:</strong> PyTorch, Keras, MATLAB — CNNs, ViTs, transfer learning</li>
+        <li><strong>Machine Learning & XAI:</strong> classical ML, explainability techniques, ensemble methods</li>
+        <li><strong>Nature-Inspired Metaheuristics:</strong> GA, Grey Wolf, Harris Hawks, Biogeography-Based, Multi-Verse Optimization — feature selection & hyperparameter tuning</li>
+        <li><strong>Medical Image Analysis:</strong> Mammography, Retinal imaging (diabetic retinopathy), Chest X-ray (COVID-19), Brain MRI</li>
+        <li><strong>Programming & Tools:</strong> MATLAB, Python, TensorFlow, PyTorch, OpenCV, scikit-learn</li>
+      </ul>
+    </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am currently working as Associate Professor in the Department of Computer Science and Engineering at 
-    DAV University, Jalandhar, India. I completed my Ph.D. at Guru Nanak Dev University, Amritsar, India 
-    specializing in Nature-Inspired Metaheuristic Algorithms for Feature Selection in Machine Learning.  
-    My recent collaboration with Prof. Uwe Aickelin (University of Melbourne) contributed to 
-    optimizing diabetic retinopathy diagnoses using advanced machine learning techniques.  
-    I am keen on research opportunities in Machine Learning and Deep Learning focused on precise 
-    diagnosis of diseases in medical images.
-  </p>
-</section>
+    <section id="publications" class="card">
+      <h2>Journal Publications (Selected, with IF & DOI)</h2>
+      <ol>
+        <li><strong>Navreet Kaur, Rahul Hans</strong>. <em>Transfer Learning for Cancer Diagnosis in Medical Images: A Compendious Study</em>. International Journal of Computational Intelligence Systems, Springer, 2025. IF: 3.0 — DOI: <a href="https://doi.org/10.1007/s44196-025-00772-0">10.1007/s44196-025-00772-0</a></li>
+        <li><strong>Rahul Hans, Sanjeev Kumar Sharma, Uwe Aickelin</strong>. <em>Optimized deep k-nearest neighbour’s based diabetic retinopathy diagnosis (ODeep-NN) using retinal images</em>. Health Information Science and Systems, Springer, 2024. IF: 3.4 — DOI: <a href="https://doi.org/10.1007/s13755-024-00282-x">10.1007/s13755-024-00282-x</a></li>
+        <li><strong>Balraj Preet Kaur, Harpreet Singh, Rahul Hans, et al.</strong>. <em>An augmentation aided concise CNN based architecture for COVID-19 diagnosis in real time</em>. Scientific Reports, Nature Portfolio, 2024. IF: 4.6 — DOI: <a href="https://doi.org/10.1038/s41598-024-51317-y">10.1038/s41598-024-51317-y</a></li>
+        <li><strong>Balraj Preet Kaur, Harpreet Singh, Rahul Hans, et al.</strong>. <em>A Genetic algorithm aided hyperparameter optimization based ensemble model for respiratory disease prediction with Explainable AI</em>. PLOS ONE, 2024. IF: 3.7 — DOI: <a href="https://doi.org/10.1371/journal.pone.0308015">10.1371/journal.pone.0308015</a></li>
+        <li><strong>Rahul Hans, Harjot Kaur</strong>. <em>Hybrid Biogeography-Based Optimization and Genetic Algorithm for Feature Selection in Mammographic Breast Density Classification</em>. International Journal of Image and Graphics, World Scientific, 2021. DOI: <a href="https://doi.org/10.1142/S0219467821400076">10.1142/S0219467821400076</a></li>
+        <li><strong>Rahul Hans, Harjot Kaur</strong>. <em>Hybrid binary Sine Cosine Algorithm and Ant Lion Optimization (SCALO) approaches for feature selection problem</em>. International Journal of Computational Materials Science and Engineering, World Scientific, 2020. DOI: <a href="https://doi.org/10.1142/S2047684119500210">10.1142/S2047684119500210</a></li>
+        <li><strong>Rahul Hans, Harjot Kaur</strong>. <em>Binary Multi-Verse Optimization (BMVO) Approaches for Feature Selection</em>. International Journal of Interactive Multimedia and Artificial Intelligence, UNIR, 2020. DOI: <a href="https://doi.org/10.9781/ijimai.2019.07.004">10.9781/ijimai.2019.07.004</a></li>
+        <li><strong>Rahul Hans, Harjot Kaur, Navreet Kaur</strong>. <em>Opposition-based Harris Hawks optimization algorithm for feature selection in breast mass classification</em>. Journal of Interdisciplinary Mathematics, Taylor & Francis, 2020. DOI: <a href="https://doi.org/10.1080/09720502.2020.1721670">10.1080/09720502.2020.1721670</a></li>
+        <li><strong>Rahul Hans, Harjot Kaur</strong>. <em>Opposition-Based Enhanced Grey Wolf Optimization Algorithm for Feature Selection in Breast Density Classification</em>. International Journal of Machine Learning and Computing, 2020. DOI: <a href="https://doi.org/10.18178/ijmlc.2020.10.3.957">10.18178/ijmlc.2020.10.3.957</a></li>
+        <li><strong>Pallavi Bagga, Rahul Hans, Vipul Sharma</strong>. <em>N-grams Based Supervised Machine Learning Model for Mobile Agent Platform Protection against Unknown Malicious Mobile Agents</em>. International Journal of Interactive Multimedia and Artificial Intelligence, UNIR, 2017. DOI: <a href="https://doi.org/10.9781/ijimai.2017.03.013">10.9781/ijimai.2017.03.013</a></li>
+        <li><strong>Pallavi Bagga, Rahul Hans, Vipul Sharma</strong>. <em>A Biological Immune System (BIS) inspired Mobile Agent Platform (MAP) security architecture</em>. Expert Systems with Applications, Elsevier, 2017. IF: 8.5 — DOI: <a href="https://doi.org/10.1016/j.eswa.2016.10.062">10.1016/j.eswa.2016.10.062</a></li>
+      </ol>
+      <p><em>Full conference list is available on the Conferences page.</em></p>
+    </section>
 
-<section id="expertise">
-  <h2>Expertise</h2>
-  <ul>
-    <li>Machine Learning</li>
-    <li>Deep Learning</li>
-    <li>Nature-Inspired Metaheuristics</li>
-    <li>Medical Imaging</li>
-  </ul>
-</section>
+    <section id="conferences" class="card">
+      <h2>Conference Publications (Selected)</h2>
+      <ul>
+        <li>Harnessing Machine Learning Classifiers as Fitness Functions in Metaheuristic-Based Feature Selection for Mammographic Breast Cancer Classification. ICCS 2025 (Accepted).</li>
+        <li>Noise Reduction in Brain MRI Images: A Gaussian Filtering Approach to Enhance Deep Learning Models for Classification. EAIC 2025 (Published).</li>
+        <li>Breast Mass Pattern Classification using Vision Transformers (ViTs) with varied Optimizers. ICHISS 2024 (Accepted).</li>
+        <li>Machine Learning Algorithms for Prediction of COVID-19 in Early Stages Using Explainable AI Approach. WCAIAA 2024 (Published).</li>
+        <li>Performance Evaluation of Various Nature-Inspired Metaheuristic Algorithms for Feature Selection in Breast Mass Classification. CIET 2021 (Published).</li>
+        <li>Improved Local Search Based Grey Wolf Optimization for Feature Selection. CIMS 2020 (Springer). DOI: https://doi.org/10.1007/978-3-030-69984-0_47</li>
+        <li>Quasi-opposition-based multi-verse optimization algorithm for feature selection. IC4S 2019 (Springer). DOI: https://doi.org/10.1007/978-981-15-3369-3_23</li>
+        <li>Feature Selection Using Metaheuristic Algorithms: Concept, Applications and Population Based Comparison. ComPE 2020 (IEEE). DOI: https://doi.org/10.1109/ComPE49325.2020.9200072</li>
+      </ul>
+    </section>
 
-<section id="publications">
-  <h2>Journal Publications</h2>
-  <ul>
-    <li><b>Transfer Learning for Cancer Diagnosis in Medical Images: A Compendious Study</b><br>
-        Navreet Kaur, Rahul Hans<br>
-        <i>International Journal of Computational Intelligence Systems</i>, 2025 | Springer<br>
-        Impact Factor: 3.0 | 
-        <a href="https://doi.org/10.1007/s44196-025-00772-0" target="_blank">DOI</a>
-    </li>
+    <section id="research" class="card">
+      <h2>Ongoing Research & Projects</h2>
+      <ul>
+        <li>Enhanced equilibrium optimization algorithms for feature selection in breast mass classification using mammograms.</li>
+        <li>Improvement of transfer learning models for disease classification in medical imaging.</li>
+      </ul>
+      <h3>Patent</h3>
+      <p><strong>Voice-Based Coding Platform for Visually and Physically Impaired</strong> — Application No. 202211064276 A (Published: 25/11/2022).</p>
+    </section>
 
-    <li><b>Optimized deep k-nearest neighbour’s based diabetic retinopathy diagnosis (ODeep-NN)</b><br>
-        Rahul Hans, Sanjeev Kumar Sharma, Uwe Aickelin<br>
-        <i>Health Information Science and Systems</i>, 2024 | Springer<br>
-        Impact Factor: 3.4 | 
-        <a href="https://doi.org/10.1007/s13755-024-00282-x" target="_blank">DOI</a>
-    </li>
+    <section id="contact" class="card">
+      <h2>Contact & CV</h2>
+      <p>Email: <a href="mailto:rahulhans@gmail.com">rahulhans@gmail.com</a></p>
+      <p>Phone: +91-9646577516</p>
+      <p><a class="button" href="Rahul_Hans_Complete_Academic_CV_Final.docx" download>Download Full CV (Word)</a></p>
+    </section>
 
-    <li><b>An augmentation aided concise CNN based architecture for COVID-19 diagnosis</b><br>
-        Balraj Preet Kaur, Harpreet Singh, Rahul Hans, et al.<br>
-        <i>Scientific Reports</i>, 2024 | Nature Portfolio<br>
-        Impact Factor: 4.6 | 
-        <a href="https://doi.org/10.1038/s41598-024-51317-y" target="_blank">DOI</a>
-    </li>
-
-    <li><b>A Genetic algorithm aided hyper parameter optimization based ensemble model</b><br>
-        Balraj Preet Kaur, Harpreet Singh, Rahul Hans, et al.<br>
-        <i>PLOS ONE</i>, 2024<br>
-        Impact Factor: 3.7 | 
-        <a href="https://doi.org/10.1371/journal.pone.0308015" target="_blank">DOI</a>
-    </li>
-
-    <li><b>Hybrid Biogeography-Based Optimization and Genetic Algorithm</b><br>
-        Rahul Hans, Harjot Kaur<br>
-        <i>International Journal of Image and Graphics</i>, 2021 | World Scientific<br>
-        Scopus & ESCI | 
-        <a href="https://doi.org/10.1142/S0219467821400076" target="_blank">DOI</a>
-    </li>
-
-    <li><b>Hybrid binary Sine Cosine Algorithm and Ant Lion Optimization</b><br>
-        Rahul Hans, Harjot Kaur<br>
-        <i>International Journal of Computational Materials Science and Engineering</i>, 2020 | World Scientific<br>
-        Scopus & ESCI | 
-        <a href="https://doi.org/10.1142/S2047684119500210" target="_blank">DOI</a>
-    </li>
-
-    <li><b>Binary Multi-Verse Optimization (BMVO) Approaches</b><br>
-        Rahul Hans, Harjot Kaur<br>
-        <i>International Journal of Interactive Multimedia and Artificial Intelligence</i>, 2020<br>
-        Impact Factor: 3.4 | 
-        <a href="https://doi.org/10.9781/ijimai.2019.07.004" target="_blank">DOI</a>
-    </li>
-
-    <li><b>Opposition-based Harris Hawks optimization algorithm</b><br>
-        Rahul Hans, Harjot Kaur, Navreet Kaur<br>
-        <i>Journal of Interdisciplinary Mathematics</i>, 2020 | Taylor and Francis<br>
-        Scopus & ESCI | 
-        <a href="https://doi.org/10.1080/09720502.2020.1721670" target="_blank">DOI</a>
-    </li>
-
-    <li><b>Opposition-Based Enhanced Grey Wolf Optimization Algorithm</b><br>
-        Rahul Hans, Harjot Kaur<br>
-        <i>International Journal of Machine Learning and Computing</i>, 2020<br>
-        <a href="https://doi.org/10.18178/ijmlc.2020.10.3.957" target="_blank">DOI</a>
-    </li>
-
-    <li><b>N-grams Based Supervised Machine Learning Model</b><br>
-        Pallavi Bagga, Rahul Hans, Vipul Sharma<br>
-        <i>International Journal of Interactive Multimedia and Artificial Intelligence</i>, 2017<br>
-        Impact Factor: 3.4 | 
-        <a href="https://doi.org/10.9781/ijimai.2017.03.013" target="_blank">DOI</a>
-    </li>
-
-    <li><b>A Biological Immune System (BIS) inspired Mobile Agent Platform</b><br>
-        Pallavi Bagga, Rahul Hans, Vipul Sharma<br>
-        <i>Expert Systems with Applications</i>, 2017 | Elsevier<br>
-        Impact Factor: 8.5 | 
-        <a href="https://doi.org/10.1016/j.eswa.2016.10.062" target="_blank">DOI</a>
-    </li>
-  </ul>
-</section>
-
-<section id="conferences">
-  <h2>Conference Articles</h2>
-  <ul>
-    <li>Harnessing Machine Learning Classifiers, ICCS-2025</li>
-    <li>Noise Reduction in Brain MRI Images, EAIC-2025</li>
-    <li>Breast Mass Pattern Classification using Vision Transformers, ICHISS-2024</li>
-    <li>Machine Learning Algorithms for COVID-19 Prediction, WCAIAA-2024</li>
-    <li>Performance Evaluation of Metaheuristic Algorithms, CIET-2021</li>
-    <li>Improved Local Search Based Grey Wolf Optimization, CIMS-2020</li>
-    <li>Quasi-opposition-based Multi-Verse Optimization, IC4S-2019</li>
-    <li>Feature Selection Using Metaheuristics, ComPE-2020</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Contact & Links</h2>
-  <p>Email: rahulhans@gmail.com</p>
-  <p>Phone: +91 9646577516</p>
-  <p>
-    <a href="https://in.linkedin.com/in/dr-rahul-hans-765779229" target="_blank">LinkedIn</a> | 
-    <a href="https://scholar.google.com/citations?user=2Tx04IcAAAAJ&hl=en" target="_blank">Google Scholar</a>
-  </p>
-</section>
-
-<footer>
-  <p>&copy; 2025 Dr. Rahul Hans. All rights reserved.</p>
-</footer>
-
+    <footer class="footer card">
+      <p>© Dr. Rahul Hans — Last updated: Oct 2, 2025</p>
+    </footer>
+  </main>
 </body>
 </html>
